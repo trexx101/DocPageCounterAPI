@@ -88,6 +88,7 @@ public class DocumentService {
 				
 				dd.setDocumentName("bohoo");
 				dd.setWordCount(doc.getProperties().getExtendedProperties().getUnderlyingProperties().getWords());
+				dd.setPageCount(doc.getProperties().getExtendedProperties().getUnderlyingProperties().getPages());
 				//dd.setWordCount(doc.getProperties().getExtendedProperties().getUnderlyingProperties().toString());
 				// textExtractor = new XWPFWordExtractor(doc);
 				//System.out.println(doc.getProperties().getExtendedProperties().getUnderlyingProperties().);

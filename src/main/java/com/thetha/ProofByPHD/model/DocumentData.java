@@ -5,6 +5,7 @@ public class DocumentData {
 	String documentTitle;
 	String documentOwner;
 	int wordCount;
+	int pageCount;
 	
 	public DocumentData() {}
 	
@@ -31,6 +32,14 @@ public class DocumentData {
 	}
 	public void setWordCount(int wordCount) {
 		this.wordCount = wordCount;
+	}
+
+	public int getPageCount() {
+		return pageCount;
+	}
+
+	public void setPageCount(int pageCount) {
+		this.pageCount = pageCount;
 	}
 	
 	

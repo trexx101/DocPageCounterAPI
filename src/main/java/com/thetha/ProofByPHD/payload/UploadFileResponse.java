@@ -6,13 +6,15 @@ public class UploadFileResponse {
     private String fileType;
     private long size;
     private int wordCount;
+    private int pageCount;
 
-    public UploadFileResponse(String fileName, String fileDownloadUri, String fileType, long size, int wordCount) {
+    public UploadFileResponse(String fileName, String fileDownloadUri, String fileType, long size, int wordCount, int pageCount) {
         this.fileName = fileName;
         this.fileDownloadUri = fileDownloadUri;
         this.fileType = fileType;
         this.size = size;
         this.wordCount = wordCount;
+        this.pageCount = pageCount;
     }
 
 	public String getFileName() {
@@ -54,6 +56,16 @@ public class UploadFileResponse {
 	public void setWordCount(int wordCount) {
 		this.wordCount = wordCount;
 	}
+
+	public int getPageCount() {
+		return pageCount;
+	}
+
+	public void setPageCount(int pageCount) {
+		this.pageCount = pageCount;
+	}
+	
+	
     
     
 }

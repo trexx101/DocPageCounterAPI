@@ -47,7 +47,7 @@ public class DocumentController {
         DocumentData docData = documentService.processDocument(doc.getDocumentOwner());
 
         return new UploadFileResponse(doc.getDocumentName(), fileDownloadUri,
-                file.getContentType(), file.getSize(), docData.getWordCount());
+                file.getContentType(), file.getSize(), docData.getWordCount(), docData.getPageCount());
     }
 	
 	@PostMapping("/uploadMultipleFiles")
