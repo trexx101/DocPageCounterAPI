@@ -32,16 +32,16 @@ public class ProofByPhdApplication {
 	}
 
 	private static void startApplication() {
-		try {
+		/*try {
 			
             
-            XWPFDocument xwpfDocument = new XWPFDocument(new FileInputStream("/home/logia/Desktop/Blue-Cliff.docx"));
+            XWPFDocument xwpfDocument = new XWPFDocument(new FileInputStream("/home/logia/Desktop/tester.docx"));
 			
             System.out.println("*****yo, word count comming next ::> ");
-			System.out.println(xwpfDocument.getProperties().getExtendedProperties().getWords());
+			System.out.println(xwpfDocument.getProperties().getExtendedProperties().getUnderlyingProperties().toString());
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
-		}
+		}*/
 		
 	}
 }

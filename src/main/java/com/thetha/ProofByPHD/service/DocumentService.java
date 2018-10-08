@@ -87,8 +87,10 @@ public class DocumentService {
 				XWPFDocument doc = new XWPFDocument(new FileInputStream(file.getAbsolutePath()));
 				
 				dd.setDocumentName("bohoo");
-				dd.setWordCount(doc.getProperties().getExtendedProperties().getWords());
+				dd.setWordCount(doc.getProperties().getExtendedProperties().getUnderlyingProperties().getWords());
+				//dd.setWordCount(doc.getProperties().getExtendedProperties().getUnderlyingProperties().toString());
 				// textExtractor = new XWPFWordExtractor(doc);
+				//System.out.println(doc.getProperties().getExtendedProperties().getUnderlyingProperties().);
 			} else if (file.getName().endsWith(".doc")) {
 				// textExtractor = new WordExtractor(new FileInputStream(file));
 				HWPFDocument hwpfDocument = new HWPFDocument(new FileInputStream(file.getAbsolutePath()));
