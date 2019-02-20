@@ -44,7 +44,7 @@ public class DocumentController {
                 .path("/downloadFile/")
                 .path(doc.getDocumentName())
                 .toUriString();
-        DocumentData docData = documentService.processDocument(doc.getDocumentOwner());
+        DocumentData docData = documentService.processDocument2(doc.getDocumentOwner());
 
         return new UploadFileResponse(doc.getDocumentName(), fileDownloadUri,
                 file.getContentType(), file.getSize(), docData.getWordCount(), docData.getPageCount());
